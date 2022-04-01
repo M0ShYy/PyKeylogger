@@ -12,8 +12,7 @@ def lines():
     for item in logss:
         item = str(item)
         if "down" in item:
-            item = item[14:]
-            item = item[:-6]
+            item = item[14:-6]
             if item != "enter":
                 outfile.write(item)
     outfile.write("\n")
